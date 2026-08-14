@@ -113,10 +113,10 @@
 	};
 
 	zephyr,user {
-		int0-gpios = <&gpio0 2 0>;
+		int0-gpios = <&gpio0 2 0>;               // Прерывание на 002
 		led-gpios = <&gpio0 15 GPIO_OPEN_SOURCE>;
-		// clk-gpios = <&gpio0 20 GPIO_OPEN_DRAIN>; // Uncomment and set to correct pin if using an external clock (crystal oscillator)
-		vcc-gpios = <&gpio0 31 0>;
+		// clk-gpios = <&gpio0 20 GPIO_OPEN_DRAIN>; 
+		vcc-gpios = <&gpio0 17 0>;               // Питание на 017
 	};
 
 };
